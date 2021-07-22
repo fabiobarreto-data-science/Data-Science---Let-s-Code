@@ -4,6 +4,7 @@ Faça um programa que dadas duas listas de mesmo tamanho, imprima o produto esca
 
 OBS: produto escalar é a soma do resultado da multiplicação entre o número na posição i da lista1 pelo número na posição i da lista2, com i variando de 0 ao tamanho da lista.
 """
+
 lista1 = [1, 4, 5]
 lista2 = [2, 2, 3]
 
