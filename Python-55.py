@@ -9,4 +9,4 @@ def soma(x, y):
     print(f"A soma de {x} e {y} é {s}")
 
 
-soma(2, 3)
+soma(4, 6)
