@@ -105,22 +105,7 @@ def erro(erro):  # Função que trabalha todos os erros e apresenta a forca e os
             print(f"{p}", end=" ")
     elif erro == 6:
         erro_06()
-
     print()
-
-
-def venceu():
-    print("          OO")
-    print("        ******")
-    print("      **********")
-    print("    **************")
-    print(" ********************")
-    print("PARABÉNS, VOCÊ ACERTOU!!!")
-    print(" ********************")
-    print("    **************")
-    print("      **********")
-    print("        ******")
-    print("          OO")
 
 
 # Lista dos nomes
@@ -129,7 +114,6 @@ lista_letras = []
 # Escolhe um dos nomes na lista por sorteio
 escolha = random.choice(lista_dos_nomes).upper().strip()
 
-
 if escolha == "TIBET":
     print("DICA: País do centro asiático")
     palavra = ["_", "_", "_", "_", "_"]
@@ -137,16 +121,17 @@ if escolha == "TIBET":
     print()
     erroMsg = 0
     while palavra != ["T", "I", "B", "E", "T"]:
-        letra = str(input("Escolha uma letra: ")).upper().strip()  # Independente se o suário digitar maiúsculo ou minúsculos, o upper() deixa tudo em maiúsculo como na lista principal e o strip para tirar o espaços caso alguém digite um.
-        if letra in lista_letras: # Avisar ao usuário que a letra já foi dita!
-            print(f"A letra {letra} já saiu, escolha novamente")
-            for p in palavra: print(f"{p}", end=" ") # Uso o "for" para printar na tela apenas as letras, sem precisar dos colchetes em forma de lista
+        letra = str(input(
+            "Escolha uma letra: ")).upper().strip()  # Independente se o suário digitar maiúsculo ou minúsculos, o upper() deixa tudo em maiúsculo como na lista principal e o strip para tirar o espaços caso alguém digite um.
+        if letra in lista_letras:  # Avisar ao usuário que a letra já foi dita!
+            print(f"A letra {letra} já saiu, escolha novamente.")
+            for p in palavra: print(f"{p}", end=" ")  # Uso o "for" para printar na tela apenas as letras, sem precisar dos colchetes em forma de lista
             print()
         elif letra == "T":
             palavra[0] = letra
             palavra[4] = letra
             lista_letras.append(letra)
-            for p in palavra: print(f"{p}", end=" ") # Uso o "for" para printar na tela apenas as letras, sem precisar dos colchetes em forma de lista
+            for p in palavra: print(f"{p}", end=" ")  # Uso o "for" para printar na tela apenas as letras, sem precisar dos colchetes em forma de lista
             print()
         elif letra == "I":
             palavra[1] = letra
@@ -164,9 +149,9 @@ if escolha == "TIBET":
             for p in palavra: print(f"{p}", end=" ")
             print()
         elif letra != "T" or letra != "I" or letra != "B" or letra != "E":
-            erraLetraTexto() # Função para alertar que o usuário errou a letra
+            erraLetraTexto()  # Função para alertar que o usuário errou a letra
             erroMsg = erroMsg + 1
-            erro(erroMsg) # Função que trabalha todos os erros e apresenta a forca e os desenhos
+            erro(erroMsg)  # Função que trabalha todos os erros e apresenta a forca e os desenhos
             if erroMsg == 6:
                 break
 elif escolha == "NEUTRON":
@@ -179,7 +164,7 @@ elif escolha == "NEUTRON":
         letra = str(input("Escolha uma letra: ")).upper().strip()
         if letra in lista_letras:
             print(f"A letra {letra} já saiu, escolha novamente")
-            for p in palavra: print(f"{p}", end=" ") # Uso o "for" para printar na tela apenas as letras, sem precisar dos colchetes em forma de lista
+            for p in palavra: print(f"{p}", end=" ")  # Uso o "for" para printar na tela apenas as letras, sem precisar dos colchetes em forma de lista
             print()
         elif letra == "N":
             palavra[0] = letra
@@ -228,7 +213,7 @@ elif escolha == "URANO":
         letra = str(input("Escolha uma letra: ")).upper().strip()
         if letra in lista_letras:
             print(f"A letra {letra} já saiu, escolha novamente")
-            for p in palavra: print(f"{p}", end=" ") # Uso o "for" para printar na tela apenas as letras, sem precisar dos colchetes em forma de lista
+            for p in palavra: print(f"{p}", end=" ")  # Uso o "for" para printar na tela apenas as letras, sem precisar dos colchetes em forma de lista
             print()
         elif letra == "U":
             palavra[0] = letra
@@ -271,7 +256,7 @@ elif escolha == "EINSTEIN":
         letra = str(input("Escolha uma letra: ")).upper().strip()
         if letra in lista_letras:
             print(f"A letra {letra} já saiu, escolha novamente")
-            for p in palavra: print(f"{p}", end=" ") # Uso o "for" para printar na tela apenas as letras, sem precisar dos colchetes em forma de lista
+            for p in palavra: print(f"{p}", end=" ")  # Uso o "for" para printar na tela apenas as letras, sem precisar dos colchetes em forma de lista
             print()
         elif letra == "E":
             palavra[0] = letra
@@ -317,7 +302,7 @@ elif escolha == "ALECRIM":
         letra = str(input("Escolha uma letra: ")).upper().strip()
         if letra in lista_letras:
             print(f"A letra {letra} já saiu, escolha novamente")
-            for p in palavra: print(f"{p}", end=" ") # Uso o "for" para printar na tela apenas as letras, sem precisar dos colchetes em forma de lista
+            for p in palavra: print(f"{p}", end=" ")  # Uso o "for" para printar na tela apenas as letras, sem precisar dos colchetes em forma de lista
             print()
         elif letra == "A":
             palavra[0] = letra
@@ -370,10 +355,11 @@ elif escolha == "BAHIA":
         letra = str(input("Escolha uma letra: ")).upper().strip()
         if letra in lista_letras:
             print(f"A letra {letra} já saiu, escolha novamente")
-            for p in palavra: print(f"{p}", end=" ") # Uso o "for" para printar na tela apenas as letras, sem precisar dos colchetes em forma de lista
+            for p in palavra: print(f"{p}", end=" ")  # Uso o "for" para printar na tela apenas as letras, sem precisar dos colchetes em forma de lista
             print()
         elif letra == "B":
             palavra[0] = letra
+            lista_letras.append(letra)
             for p in palavra: print(f"{p}", end=" ")
             print()
         elif letra == "A":
@@ -408,7 +394,7 @@ elif escolha == "COQUEIRO":
         letra = str(input("Escolha uma letra: ")).upper().strip()
         if letra in lista_letras:
             print(f"A letra {letra} já saiu, escolha novamente")
-            for p in palavra: print(f"{p}", end=" ") # Uso o "for" para printar na tela apenas as letras, sem precisar dos colchetes em forma de lista
+            for p in palavra: print(f"{p}", end=" ")  # Uso o "for" para printar na tela apenas as letras, sem precisar dos colchetes em forma de lista
             print()
         elif letra == "C":
             palavra[0] = letra
@@ -453,6 +439,8 @@ elif escolha == "COQUEIRO":
             if erroMsg == 6:
                 break
 
+
 print("+++++++++++++++++++++++++")
 print("OBRIGADO E VOLTE SEMPRE!!")
 print("+++++++++++++++++++++++++")
+
