@@ -7,9 +7,13 @@ Exemplo: Se a função receber as listas [1,4,3] e [3,5,1], então a função de
 
 
 def somaListas(lista1, lista2):
-  lista_soma = lista1 + lista2
+    for c in range(0, len(lista1)):
+        lista_soma = lista1[c] + lista2[c]
+        print(f"{lista_soma} ", end="")
 
 
 lista_soma = []
 lista1 = [1, 4, 3]
 lista2 = [3, 5, 1]
+
+somaListas(lista1, lista2)
