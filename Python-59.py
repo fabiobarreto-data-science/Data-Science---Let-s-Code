@@ -9,10 +9,15 @@ import random
 lista_maior = []
 
 
-for cont in range(0, 11):
-    numero = random.randint(0, 100)
-    lista_maior.append(numero)
+def numerosAleatorios():
+    for cont in range(0, 11):
+        numero = random.randint(0, 100)
+        lista_maior.append(numero)
+        lista_maior.sort()
+    print(lista_maior)
+    print(f"O maior número da lista é {max(lista_maior)}")
 
 
-print(lista_maior)
-print(f"O maior número da lista é {max(lista_maior)}")
+numerosAleatorios()
+
+
