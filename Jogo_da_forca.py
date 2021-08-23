@@ -120,7 +120,7 @@ def erro_06():
 def erraLetraTexto():
     print()
     print("\033[1;31;40m===============\033[m")
-    print("\033[1;31;40mERROU A LETRA!!\033[m")
+    print("\033[1;31mERROU A LETRA!!\033[m")
     print("\033[1;31;40m===============\033[m")
     print()
 
