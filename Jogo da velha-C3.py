@@ -148,6 +148,7 @@ def jogadaMaquina(tabuleiro, jogada):
     elif (jogada == 4 and tabuleiro["B"][0] == "O") and (tabuleiro["B"][2] == "X") and (tabuleiro["C"][2] == "O"):tabuleiro["A"][1] = "X"  # C3
     elif (jogada == 5 and tabuleiro["B"][0] == "O") and (tabuleiro["A"][1] == "O") and (tabuleiro["C"][2] == "O") and (tabuleiro["C"][0] == "O"):tabuleiro["A"][2] = "X"  # C3
     elif (jogada == 5 and tabuleiro["C"][1] == "O") and (tabuleiro["A"][1] == "X") and (tabuleiro["C"][2] == "O") and (tabuleiro["A"][2] == "O"):tabuleiro["C"][0] = "X"  # C3
+    elif (jogada == 5 and tabuleiro["A"][1] == "O") and (tabuleiro["B"][1] == "X") and (tabuleiro["C"][2] == "O") and (tabuleiro["A"][2] == "O"):tabuleiro["C"][0] = "X" # C3
 
     return tabuleiro
 

@@ -53,7 +53,7 @@ def jogada(tabuleiro):
     Parâmetros: tabuleiro
     Retorno: tabuleiro
     """
-    letra, numero = validaEntrada(tabuleiro, input(f"Vez do jogador: "))
+    letra, numero = validaEntrada(tabuleiro, input(f"\033[1;31;40mVez do jogador: \033[m"))
 
     tabuleiro[letra][numero-1] = "O"
 
@@ -68,7 +68,7 @@ def parabenizaGanhador(tabuleiro, jogadorGanhou):
     imprimiTabuleiro(tabuleiro)
     # Parabenização invertida pois jogador da vez veio depois da jogada onde a vitória ocorreu
     if jogadorGanhou == "X":
-        print("A máquina ganhou!")
+        print("\033[7;31;40mA máquina ganhou!\033[m")
     else:
         print("O jogador ganhou! (Não deve acontecer)")
 
