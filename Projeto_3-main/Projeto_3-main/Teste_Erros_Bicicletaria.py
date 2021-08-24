@@ -63,7 +63,6 @@ class Testes(unittest.TestCase):
         self.cliente = Cliente("Marcelo", 10000)
         self.assertEqual(self.cliente.pagarConta(1, "Marcelo"), 0)
 
-
     # def receberPedido(self, tipoAluguel, qtdeBike, periodo): OK --------------
 
     # def receberPagamento(self, valorConta, valorPgto): OK --------
@@ -72,7 +71,6 @@ class Testes(unittest.TestCase):
 
     # def pagarConta(self, valorPgto, objetoBicicletaria):
     
-
 
 if __name__ == "__main__":
     unittest.main()
