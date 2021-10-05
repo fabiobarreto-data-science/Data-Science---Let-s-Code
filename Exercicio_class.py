@@ -1,10 +1,9 @@
 """
 Enunciado
-Printe os elementos dos seguintes dois vetores usando apenas um for:
+Carregue o arquivo csv que você salvou na questão anterior e, em seguida, obtenha o que é solicitado nos itens elencados abaixo:
 
-arr = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
-
-Depois, faça o mesmo usando numpy (usando a função nditer) e deixe um comentário sobre a diferença dos dois métodos.
-
-arr = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+(a) A quantidade de abacates do tipo convecional e do tipo orgânico.
+(b) A quantidade de registros (linhas) de abacates vendidos para cada região.
+(c) Para que todos os labels das colunas fiquem padronizados, renomeie aqueles que estão iniciando em letra minúscula para que iniciem em letra maiúscula.
+(d) Uma vez que você já possui uma coluna com a data, remova a coluna que apresenta o ano.
 """
